@@ -3,7 +3,7 @@ name: Deploy Nodejs app to aws
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
