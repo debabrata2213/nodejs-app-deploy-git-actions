@@ -18,8 +18,8 @@ jobs:
           host: 54.164.56.227
           username: ubuntu
           key: ${{secrets.SSH_KEY}}
-          script:
-            cd /nodejs-app-deploy-git-actions
+          script: |
+            cd nodejs-app-deploy-git-actions
             git pull
             docker compose up -d
 
