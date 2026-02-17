@@ -16,7 +16,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: 54.164.56.227
-          username: root
+          username: ubuntu
           key: ${{secrets.SSH_KEY}}
           script:
             cd nodejs-app-deploy-git-actions
